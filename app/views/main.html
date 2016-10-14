@@ -8,16 +8,42 @@
 </div>
 
 <div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+<h2>New Customer</h2>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+<div class="row" ng-controller="MainCtrl">
+<div class="col-md-6">
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+  <form class="form-horizontal" name="AddNewForm" id="add-new-form" method="post" action="">
+   
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input class="form-control" type="text" ng-model="customer.Username" required />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Adrress</label>
+      <input class="form-control" type="text" ng-model="customer.First_Name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Phone number</label>
+      <input class="form-control" type="text" ng-model="customer.Last_Name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input class="form-control" type="text" ng-model="customer.Email" required />
+    </div>
+    <div class="form-group">
+      <label for="country">Note</label>
+      <input class="form-control" type="text" ng-model="customer.Status" required />
+    </div>
+    
+    <button class="btn btn-primary" ng-disabled="AddNewForm.$invalid || isUnchanged(customer)" id="add-new-btn" ng-click="New_Customer(customer)">Save</button>
+    <a href="#/" class="btn btn-danger">Cancel</a>
+  </form>
+
+</div>
+</div>
+  
 </div>
