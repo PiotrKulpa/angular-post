@@ -1,9 +1,3 @@
-/node_modules
-/dist
-/.tmp
-/.sass-cache
-/bower_components
-
 .DS_Store
 
 application/cache/*
@@ -31,5 +25,3 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
-
-/api/user_guide

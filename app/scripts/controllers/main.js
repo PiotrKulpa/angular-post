@@ -17,9 +17,9 @@ angular.module('angularPostApp')
 	    $scope.New_Customer = function(customer, AddNewForm) {
 	    	console.log(customer);
 
-		    $http.post('api/New_Customer', customer).success(function(){
+		    $http.post('http://localhost/testphp/angular-post/api/', customer).success(function(){
 			    $scope.reset();
-			    $scope.activePath = $location.path('/');
+			    //$scope.activePath = $location.path('/');
 		    });
 
 		    $scope.reset = function() {
